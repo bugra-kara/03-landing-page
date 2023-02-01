@@ -172,19 +172,19 @@ const Home = () => {
       </div>
       {/* Slider 2*/}
       <div className='container pb-36'>
-        <div className='grid grid-flow-row sm:grid-cols-4 gap-5 w-full bg-navbar-bg px-8 sm:px-16 py-12 rounded-3xl'>
+        <div className='grid grid-flow-row sm:grid-cols-4 gap-5 w-full bg-navbar-bg px-8 sm:px-12 lg:px-16  py-12 rounded-3xl'>
           <div className='col-span-4 sm:col-span-3 space-y-4'>
             <div className='text-xl text-border font-medium uppercase'>
             they talk about us
             </div>
-            <div className='text-2xl sm:text-4xl font-bold uppercase'>
-            OUR A-ROOM AND STO PROJECT HAVE <br /> MORE THAN 500 MILLION USD DATE.
+            <div className='text-2xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold uppercase md:pr-16 lg:pr-24 xl:pr-0'>
+            OUR A-ROOM AND STO PROJECT HAVE MORE THAN 500 MILLION USD DATE.
             </div>
-            <div className=' border-2 border-seperate border-spacing-5 border-white bg-border w-fit rounded-full px-8 py-3'>
+            <div className='border-2 border-seperate border-spacing-5 border-white bg-border w-fit rounded-full px-8 py-3'>
             Learn More
             </div>
           </div>
-          <div className='sm:grid col-span-1 justify-end'>
+          <div className='sm:grid col-span-1 justify-end justify-items-end'>
             <div className='text-border text-sm font-light hidden sm:flex justify-center'>
               <div className='w-fit h-fit px-6 py-1.5 rounded-full border border-border space-x-1'>
                 <span className='text-white'>1</span>
@@ -193,10 +193,10 @@ const Home = () => {
               </div>
             </div>
             <div className='pt-10 sm:relative'>
-              <button onClick={()=>{handleClick()}} className='absolute border border-border flex rounded-full z-20 justify-center items-center w-12 h-12 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-12 lg:h-12'>
+              <button onClick={()=>{handleClick()}} className='absolute sm:right-24 border border-border flex rounded-full z-20 justify-center items-center w-12 h-12 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-12 lg:h-12'>
                 <AiOutlineLeft/>
               </button>
-              <div className='relative w-60 right-5 -top-24'>
+              <div className='relative w-60 right-5 sm:-right-20 -top-24'>
                 <img className='absolute' src={Next} alt="" />
                 <button onClick={()=>{handleClick()}} className='absolute m-20 p-7'><AiOutlineRight className='h-7 w-7'/></button>
               </div>
